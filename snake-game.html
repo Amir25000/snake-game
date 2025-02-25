@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Unbeatable snake game</title>
+    <link rel="icon" type="image/svg" href="./logo/s-solid.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./snake-game.css" />
+  </head>
+  <body>
+    <h1 class="heading">YOU CAN'T BEAT THIS SCORE !!!</h1>
+    <div class="game-over  hidden">
+      <p>Game Over!!!</p>
+      <p>YOU ATE YOURSELF<span>&#128542;</span></p>
+      <button class="buttons js-new-game1">Play Again</button>
+    </div>
+    <div class="who-beat-the-score">
+        <h1>Players who beat the score</h1>
+        <p>0</p>
+    </div>
+    <p class="creator">&copy; Amir M.</p>
+    <div class="container">
+      <div class="canvasContainer">
+        <canvas class="canvas"></canvas>
+      </div>
+      <div class="game-tools">
+        <button class="buttons  js-new-game">New Game</button>
+        <button class="buttons  js-game-over">Pause</button>
+        <div class="scores">
+          <div class="result-div">
+            <h1>Current Score</h1>
+            <p class="result">0</p>
+          </div>
+          <div class="high-score">
+            <h1>Your highest</h1>
+            <p class="highest-score">0</p>
+          </div>
+          <div class="score-to-beat">
+            <h1>Score to beat</h1>
+            <p class="score-to-beat">150<span>&#x1f451;</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./js files/snake-main.js"></script>
+  </body>
+</html>
